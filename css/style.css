@@ -31,7 +31,6 @@ img{
 	width:20%;
 	float:left;
 }
-.logo img{}
 nav{
 	width:80%;
 	float:left;
@@ -128,6 +127,26 @@ article{
 .gallery-2{}
 
 /*gallery*/
+
+/* media */
+.media{
+	height: 80vh;
+	width: auto;
+}
+.media h1{
+	margin-top: 100px;
+	text-align: center;
+	color: #009688;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.media video{
+	display: block;
+	position: relative;
+	left: 25%;
+	height: 350px;
+	width: 400px;
+}
+/* media */
 
 /*footer*/
 
