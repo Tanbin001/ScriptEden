@@ -52,6 +52,20 @@ nav ul li a{
     text-transform:  uppercase;
     font-weight: 600;
 }
+.dropdown{
+	position: absolute;
+	display: none;
+	right: 290px;
+	background-color: #5a5a5a;
+}
+.dropdown li{
+	display: block;
+	position: relative;
+
+}
+nav > ul > li:hover > ul{
+	display: inline-block;
+}
 
 /*header*/
 
