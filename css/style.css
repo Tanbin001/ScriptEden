@@ -184,7 +184,13 @@ td, th{
 /* table */
 
 /* box part */
-
+.box-part{
+	display: flex;
+	justify-content: center;
+	margin: 100px 100px;
+	justify-content: space-between; /* vertical line */
+	align-items: center ; /* horizontal line */
+}
 .box{
 	height: 100px;
 	width: 100px;
@@ -192,19 +198,91 @@ td, th{
 }
 #box-1{
 	background-color: sienna;
+	order: 3;
 	/* visibility: hidden; */
 }
 #box-2{
 	background-color: seagreen;
+	order: 4;
 }
 #box-3{
 	background-color: salmon;
+	order: 1;
 }
 #box-4{
 	background-color: slategray;
+	order: 2;
 }
 
 /* box part */
+
+.rect{
+	/* margin: 200px 400px; */
+	height: 400px;
+	width: 800px;
+	background-color: salmon;
+
+}
+.ball{
+	position: relative;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color:sienna;
+	animation: sliding 3s ease-in-out 0.5s infinite alternate;
+	animation-play-state: running;
+}
+@keyframes sliding {
+	0%{
+		background-color: silver;
+		left: 0px;
+		top: 0px;
+		transform: scale(1);
+	}
+	25%{
+		background-color: turquoise;
+		top: 300px;
+		transform: scale(0.5);
+	}
+	50%{
+		background-color:violet;
+		top: 0px;
+		transform: scale(1);
+	}
+	75%{
+		background-color: tomato;
+		top: 300px;
+		transform: scale(0.5);
+	}
+	100%{
+		background-color: springgreen;
+		left: 700px;
+		top: 0px;
+		transform: scale(1);
+	}
+	
+}
+/* login form */
+
+.login-container{
+	display: flex;
+	justify-content: center;
+}
+.login-form{
+	display: flex;
+	flex-direction: column;
+}
+.login-form input, button{
+	margin-top: 15px;
+	font-size: 1.3rem;
+	border: 1px solid dimgray;
+	border-end-end-radius: 10px;
+	border-start-start-radius: 10px;
+}
+.login-form button{
+	background-color: sandybrown;
+}
+/* login form */
 
 /*footer*/
 
